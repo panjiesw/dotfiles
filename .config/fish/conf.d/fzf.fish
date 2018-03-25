@@ -1,0 +1,1 @@
+/home/panjiesw/.config/fisherman/fzf/conf.d/fzf.fish
