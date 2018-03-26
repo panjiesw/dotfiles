@@ -11,9 +11,9 @@ alert = #9d3a5c
 monitor = "eDP1"
 dpi = 133
 include-file = ~/.config/polybar/top-bar
-tray-position = right
-modules-left = i3 volume netspeed
-modules-center = xwindow
+;tray-position = right
+modules-left = volume ip netspeed
+modules-center = i3
 modules-right = memory battery date lock
 
 [module/hostname]
@@ -30,7 +30,7 @@ exec = echo "$(uname -n)"
 type = custom/script
 interval = 2
 format = "<label> "
-format-prefix = "ip: "
+format-prefix = " ip: "
 format-prefix-foreground = ${colors.primary}
 format-background = ${colors.background}
 format-padding = 1
@@ -73,11 +73,11 @@ enable-scroll = false
 
 # format = <label-state> <label-mode>
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-# ws-icon-3 = 4;
-# ws-icon-4 = 5;
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
 # ws-icon-5 = 6;
 ws-icon-default = ♟
 

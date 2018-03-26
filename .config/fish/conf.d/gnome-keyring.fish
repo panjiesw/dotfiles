@@ -2,7 +2,7 @@ set -l envfile "$HOME/.gnome-keyring.env"
 
 if not pgrep -f 'gnome-keyring-daemon.*components.*gpg,pkcs11,ssh,secrets' > /dev/null
     # A hack to clean up old instances
-    killall gnome-keyring-daemon
+    killall -q gnome-keyring-daemon
 
     gnome-keyring-daemon --start --components=gpg,pkcs11,ssh,secrets > $envfile
 end
