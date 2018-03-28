@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": ".i3"
+		},
+		{
+			"path": ".config"
+		},
+		{
+			"path": "dotfiles"
+		},
+		{
+			"path": ".aureola"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"**/Code": true
+		},
+		"files.watcherExclude": {
+			"**/.git/objects/**": true,
+			"**/.git/subtree-cache/**": true,
+			"**/node_modules/**": true,
+			"**/Code/**": true
+		}
+	}
+}

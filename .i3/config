@@ -34,6 +34,7 @@ bindsym $mod+Shift+q kill
 
 # start program launcher
 bindsym $mod+d exec --no-startup-id dmenu_recency
+bindsym $mod+p exec --no-startup-id rofi -show combi
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -304,7 +305,7 @@ exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id ~/.config/polybar/launch.i3.sh
-exec --no-startup-id ~/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox --minimize
+# exec --no-startup-id ~/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox --minimize
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=ssh
 

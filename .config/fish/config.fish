@@ -6,4 +6,5 @@ set -x GRADLE_HOME $HOME/.sdkman/candidates/gradle/current
 # Aliases
 alias vim=nvim
 alias conf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias nvconf='vim ~/.config/nvim/init.vim'
 alias myd='vim ~/.i3/config'

@@ -12,7 +12,7 @@ monitor = "eDP1"
 dpi = 133
 include-file = ~/.config/polybar/top-bar
 ;tray-position = right
-modules-left = volume ip netspeed
+modules-left = volume uptime netspeed
 modules-center = i3
 modules-right = memory battery date lock
 
@@ -110,12 +110,12 @@ label = %title:0:100:...%
 [module/date]
 type = internal/date
 interval = 30
-label = " %date% %time%"
+label = "%date% %time%"
 date =
 date-alt = %a %d
 time = %H:%M
 time-alt =
-format-prefix = " "
+format-prefix = ""
 format-prefix-foreground = ${colors.primary}
 
 [module/lock]
