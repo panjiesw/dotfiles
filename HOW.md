@@ -34,4 +34,7 @@ adapta-black-maia-theme
 add active-monitor=0 in [greeter]
 customize with LightDM GTK+ Greeter Setting
 
+## i3
+
+TODO add i3 instructions
 
