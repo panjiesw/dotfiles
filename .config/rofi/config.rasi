@@ -1,5 +1,5 @@
 configuration {
-	modi: "combi,drun,window,top,keys";
+	modi: "combi,drun,run,window,top,keys";
 	width: 40;
 	lines: 12;
 /*	columns: 1;*/
@@ -11,7 +11,7 @@ configuration {
 /*	xoffset: 0;*/
 /*	fixed-num-lines: true;*/
 	show-icons: true;
-/*	terminal: "rofi-sensible-terminal";*/
+	terminal: "xfce4-terminal";
 /*	ssh-client: "ssh";*/
 /*	ssh-command: "{terminal} -e {ssh-client} {host}";*/
 /*	run-command: "{cmd}";*/

@@ -18,12 +18,12 @@
 #define base0E #b854d4
 #define base0F #d43552
 
-!Xft.dpi: 100
+!Xft.dpi: 135
 Xft.antialias: true
 Xft.hinting: true
-Xft.rgba: rgb
+Xft.rgba: none
 Xft.autohint: false
-Xft.hintstyle: hintslight
+Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 
 !XTerm*background: #2b2b2b
@@ -80,11 +80,8 @@ XTerm*reverseVideo:               on
 !XTerm*faceName:                   Terminus:size=11:antialias=true
 XTerm*selectToClipboard:          true
 
-URxvt.font:                       xft:UbuntuMono Nerd Font Mono:size=12, \
-                                  xft:DejaVu Sans Mono:bold:style=Book:size=10, \
-                                  xft:Material Icons:antialias=false:size=10, \
-                                  xft:Font Awesome:size=10
-!URxvt*letterSpace: 1
+URxvt.font:                       xft:UbuntuMonoNerdFontMono:pixelsize=14, xft:DejaVuSansMonoNerdFontMono:pixelsize=14
+!URxvt*letterSpace: 0
 
 ! alternative font settings with 'terminus':
 !URxvt.font:      -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
@@ -105,11 +102,15 @@ URxvt*saveLines:                  5000
 ! URxvt*transparent:              true
 ! URxvt*shading:                  138
 
+! Key Fix
+!URxvt.keysym.Home: \033[1;2H
+
 ! other possible settings:
-! Rxvt.perl-ext-common:            ...,clipboard
-! URxvt.keysym.M-C-c:              perl:clipboard:copy
-! URxvt.keysym.M-v:                perl:clipboard:paste
-! URxvt.keysym.M-C-v:              perl:clipboard:paste_escaped
+URxvt.perl-ext-common:           clipboard
+URxvt.keysym.C-C:                perl:clipboard:copy
+URxvt.keysym.C-V:                perl:clipboard:paste
+URxvt.keysym.M-C-V:              perl:clipboard:paste_escaped
+!URxvt.iso14755:                  false
 ! URxvt*termName:                  string
 ! URxvt*geometry:                  geometry
 ! URxvt*chdir:                     string

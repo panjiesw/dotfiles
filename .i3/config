@@ -8,7 +8,7 @@ set $mod Mod4
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window pixel 1
+new_window none
 new_float normal
 
 # Hide borders
@@ -60,6 +60,7 @@ bindsym $mod+Ctrl+b exec xfce4-terminal -e 'bmenu'
 bindsym $mod+F2 exec firefox-developer-edition
 # bindsym $mod+F3 exec pcmanfm
 bindsym $mod+F3 exec ranger
+bindsym $mod+F4 exec code
 # bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F5 exec xfce4-terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
@@ -198,8 +199,8 @@ workspace $ws5 output HDMI2
 # assign [class="Pale moon"] $ws2
 # assign [class="Pcmanfm"] $ws3
 # assign [class="Skype"] $ws5
-assign [class="Firefox"] $ws1
-assign [class="Code"] $ws2
+# assign [class="Firefox"] $ws1
+# assign [class="Code"] $ws2
 
 # Open specific applications in floating mode
 for_window [title="Tixati"] floating enable border normal
@@ -295,11 +296,11 @@ exec --no-startup-id "/usr/local/bin/sb.sh; sleep 1; nitrogen --restore; sleep 1
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
-exec --no-startup-id xfce4-clipman
+# exec --no-startup-id xfce4-clipman
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia
-exec --no-startup-id start_conky_green
+# exec --no-startup-id start_conky_green
 exec --no-startup-id ~/.conky/conky-startup.sh
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
@@ -397,7 +398,7 @@ gaps outer -4
 # gaps outer all plus 5
 
 # Smart gaps (gaps used if only more than one container on the workspace)
-smart_gaps on
+# smart_gaps on
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace)
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
