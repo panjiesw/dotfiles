@@ -11,6 +11,9 @@
 		},
 		{
 			"path": ".aureola"
+		},
+		{
+			"path": ".conky"
 		}
 	],
 	"settings": {
