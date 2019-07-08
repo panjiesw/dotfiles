@@ -30,8 +30,9 @@ ColorForeground=#a6a28c
 ColorBackground=#20201d
 ColorPalette=#20201d;#d73737;#60ac39;#ae9513;#6684e1;#b854d4;#1fad83;#a6a28c;#7d7a68;#d73737;#60ac39;#ae9513;#6684e1;#b854d4;#1fad83;#fefbec
 FontName=UbuntuMono Nerd Font 12
-ScrollingBar=TERMINAL_SCROLLBAR_NONE
 ScrollingOnOutput=FALSE
 DropdownWidth=100
 BackgroundDarkness=0.750000
+MiscShowRelaunchDialog=TRUE
+ScrollingBar=TERMINAL_SCROLLBAR_NONE
 

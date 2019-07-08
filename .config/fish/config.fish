@@ -25,6 +25,9 @@ set -x FOCE_COLOR 1
 # set -x PET_PUB_KEY ~/.petclinic/certs.json
 set -x -U GOPATH $HOME/dev/workspaces/go
 
+set -x ANDROID_HOME $HOME/dev/android-sdk
+set -x BROWSER /usr/bin/firefox-developer-edition
+
 # Aliases
 alias vim=nvim
 alias conf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
